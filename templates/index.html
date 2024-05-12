@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Exibir Tabela Banco</title>
+</head>
+
+<body>
+
+    <h2>Resumo do Último Balanço</h2>
+    <center>
+        <h3>Cadastrar novos bancos</h3>
+
+        <div id="centralizar-caixa-pesquisa">
+            <div id="caixa-pesquisa">
+                <form id="bancoFormCad" action="cadastrar" method="POST" class="caixa-pesquisa">
+                    <input placeholder="Cadastrar" name="nome" type="text">
+                    <button type="submit" name="cadastrar" id="cadastrarBanco" onclick=""><label for="check" class="icon">
+                            <img src="/static/imagens/Vector.svg" alt="">
+                        </label></button>
+                </form>
+            </div>
+        </div>
+    </center>
+    <br>
+    <hr width="100%">
+    <center>
+        <h3>Pesquisar por bancos já cadastrados</h3>
+        <br>
+        <div id="centralizar-caixa-pesquisa">
+            <div id="caixa-pesquisa">
+                <form id="bancoForm" action="buscar" method="GET" class="caixa-pesquisa">
+                    <input placeholder="Pesquisar" name="nome" type="text">
+                    <button type="submit" name="buscar" id="buscarBanco" onclick=""><label for="check" class="icon">
+                            <img src="/static/imagens/Vector.svg" alt="">
+                        </label></button>
+                </form>
+            </div>
+        </div>
+    </center>
+
+    <br>
+    <br>
+    <br>
+
+    <center>
+        <div class="table" id="table">
+            <div class="table-header">
+                <div class="table-cell">Nome</div>
+                <div class="table-cell">Data de Publicação</div>
+                <div class="table-cell">Lucro Líquido (R$)</div>
+                <div class="table-cell">Patrimônio Líquido (R$)</div>
+                <div class="table-cell">Ativo Total (R$)</div>
+                <div class="table-cell">Captações (R$)</div>
+                <div class="table-cell">Carteira de Crédito Classificada (R$)</div>
+                <div class="table-cell">Patrimônio de Referência RWA (R$)</div>
+                <div class="table-cell">Número de Agências</div>
+                <div class="table-cell">Número de Pontos de Atendimento</div>
+            </div>
+                <div class="table-row">
+                   
+                </div>
+        </div>
+        
+    </center>
+
+
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>
